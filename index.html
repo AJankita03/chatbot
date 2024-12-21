@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freak Chatbot</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f9e7fe, #e3f6fc);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container Styles */
+        .chatbot-container {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            overflow: hidden;
+        }
+
+        /* Header */
+        .chatbot-header {
+            background: #031d95;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Iframe Styles */
+        .chatbot-frame {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        /* Footer */
+        .chatbot-footer {
+            background: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .chatbot-header {
+                font-size: 1.2rem;
+            }
+
+            .chatbot-frame {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .chatbot-header {
+                font-size: 1rem;
+                padding: 10px 0;
+            }
+
+            .chatbot-frame {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chatbot-header">Freak Chatbot</div>
+        <iframe class="chatbot-frame" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/a6dfae52-5ec2-4194-b2a6-797edb4b53dc"></iframe>
+        <div class="chatbot-footer">Powered by Dialogflow</div>
+    </div>
+</body>
+</html>
